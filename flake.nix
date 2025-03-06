@@ -21,6 +21,8 @@
               (pkgs.python3.withPackages (python-pkgs: [ 
                 python-pkgs.requests
               ]))
+              treefmt
+              black
             ];
             shellHook = ''
               export PS1='[$PWD]\nscarf-shell ❄ '
